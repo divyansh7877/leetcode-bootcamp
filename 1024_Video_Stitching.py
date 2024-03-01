@@ -1,5 +1,9 @@
 class Solution:
     def videoStitching(self, clips: list[list[int]], time: int) -> int:
+        '''
+        Problem Link: https://leetcode.com/problems/video-stitching/description/
+        Solved by sorting and use two pointers.
+        '''
         clips.sort()
         clips.append((time,time))
         max_end=-1

@@ -1,7 +1,9 @@
 class Solution:
     def maxArea(self, height: list[int]) -> int:
-        # Using two pointers
-
+        '''
+        Problem Link: https://leetcode.com/problems/container-with-most-water/description/
+        Solved using two pointers.
+        '''
         lef=0
         rig=len(height)-1
         max_area=0
@@ -18,3 +20,4 @@ class Solution:
                 rig-=1
         
         return max_area
+
