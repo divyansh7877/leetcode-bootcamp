@@ -21,6 +21,7 @@ class Solution:
             for j in range(len(word)):
                 if word[j:] in backward and word[:j] == word[j-1::-1]:
                     res.append([backward[word[j:]], i])
+                    
                 if word[:j] in backward and word[j:] == word[:j-1:-1]:
                     res.append([i, backward[word[:j]]])
         return res
